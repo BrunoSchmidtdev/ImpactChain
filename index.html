@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ImpactChain — Doações com Transparência Real</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="logo-text">Impact<span>Chain</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#transparencia">Transparência</a></li>
+      <li><a href="#impacto">Impacto</a></li>
+      <li><a href="#doe" class="nav-cta">Doe agora</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Blockchain · Ethereum Testnet · MVP
+      </div>
+      <h1>Doações com<br><em>transparência</em><br>real e verificável</h1>
+      <p class="hero-desc">
+        Cada centavo registrado na blockchain. Acompanhe o impacto da sua doação em tempo real — do repasse à execução, sem intermediários ocultos.
+      </p>
+      <div class="hero-actions">
+        <a href="#doe" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+          Fazer uma doação
+        </a>
+        <a href="#transparencia" class="btn-secondary">
+          Ver transações on-chain
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">R$127k</div>
+          <div class="hero-stat-label">Total arrecadado</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">3.842</div>
+          <div class="hero-stat-label">Doadores únicos</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">100%</div>
+          <div class="hero-stat-label">Auditável on-chain</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card-wrap">
+      <div class="cause-card">
+        <div class="cause-card-header">
+          <span class="cause-tag">✦ Causa piloto</span>
+          <div class="verified-badge">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Verificado
+          </div>
+        </div>
+        <div class="cause-title">Água Limpa para o Semiárido</div>
+        <div class="cause-desc">Cisternas e poços artesianos para 200 famílias no interior da Bahia. Cada doação é rastreada do depósito à obra.</div>
+        <div class="progress-wrap">
+          <div class="progress-header">
+            <span>R$ 86.400 arrecadados</span>
+            <span>68% da meta</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:68%"></div>
+          </div>
+        </div>
+        <div class="cause-footer">
+          <div class="donors-info">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4"/><circle cx="19" cy="7" r="4"/><path d="M15 21v-2a4 4 0 014-4h0"/></svg>
+            2.318 doadores
+          </div>
+          <button class="donate-btn-sm" onclick="document.getElementById('doe').scrollIntoView({behavior:'smooth'})">Apoiar →</button>
+        </div>
+      </div>
+
+      <div class="tx-feed">
+        <div class="tx-feed-title">Transações recentes</div>
+        <div class="tx-item">
+          <div class="tx-dot"></div>
+          <div class="tx-info">
+            <div class="tx-hash">0x7f3a...c912</div>
+            <div class="tx-meta">há 2 min · Água Limpa BA</div>
+          </div>
+          <div class="tx-amount">R$ 50</div>
+        </div>
+        <div class="tx-item">
+          <div class="tx-dot"></div>
+          <div class="tx-info">
+            <div class="tx-hash">0xb2e1...44fd</div>
+            <div class="tx-meta">há 8 min · Água Limpa BA</div>
+          </div>
+          <div class="tx-amount">R$ 150</div>
+        </div>
+        <div class="tx-item">
+          <div class="tx-dot"></div>
+          <div class="tx-info">
+            <div class="tx-hash">0x09cd...7a3b</div>
+            <div class="tx-meta">há 15 min · Água Limpa BA</div>
+          </div>
+          <div class="tx-amount">R$ 30</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="como-funciona">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-label">Como funciona</div>
+      <h2 class="section-title">Do PIX à obra,<br>tudo registrado</h2>
+      <p class="section-subtitle">Um fluxo simples que une a facilidade dos pagamentos tradicionais à segurança e transparência da blockchain.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card fade-in">
+        <span class="step-num">01</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457"/><path d="M12 21.593c5.63-5.539 11-10.297 11-14.402 0-3.791-3.068-5.191-5.281-5.191-1.312 0-4.151.501-5.719 4.457"/></svg>
+        </div>
+        <div class="step-title">Você escolhe a causa</div>
+        <p class="step-desc">Selecione uma causa verificada, veja o histórico de impacto e decida o valor que faz sentido para você.</p>
+      </div>
+      <div class="step-card fade-in fade-in-delay-1">
+        <span class="step-num">02</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        </div>
+        <div class="step-title">Pagamento seguro</div>
+        <p class="step-desc">Doe via PIX ou cartão. Seu pagamento é processado com segurança e convertido automaticamente.</p>
+      </div>
+      <div class="step-card fade-in fade-in-delay-2">
+        <span class="step-num">03</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="step-title">Registro on-chain</div>
+        <p class="step-desc">Cada doação é registrada como uma transação imutável na blockchain Ethereum, com hash público e verificável.</p>
+      </div>
+      <div class="step-card fade-in fade-in-delay-3">
+        <span class="step-num">04</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div class="step-title">Acompanhe o impacto</div>
+        <p class="step-desc">Receba atualizações reais com fotos, relatórios e comprovantes de gasto — todos vinculados ao seu hash de doação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSPARENCY -->
+<section class="transparency" id="transparencia">
+  <div class="transparency-inner">
+    <div class="fade-in">
+      <div class="section-label">Transparência blockchain</div>
+      <h2 class="section-title">Cada bloco<br>conta uma história</h2>
+      <p class="section-subtitle">Todas as transações são imutáveis, públicas e verificáveis por qualquer pessoa no mundo. Sem caixinha preta.</p>
+      <div class="trust-features">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0CA882" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Imutável</h4>
+            <p>Registros não podem ser alterados ou deletados</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0CA882" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Público</h4>
+            <p>Qualquer pessoa pode verificar na rede Ethereum</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0CA882" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Descentralizado</h4>
+            <p>Sem servidor central que possa ser manipulado</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0CA882" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Open source</h4>
+            <p>Contratos inteligentes públicos e auditáveis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blockchain-viz fade-in fade-in-delay-1">
+      <div style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.8px;text-transform:uppercase;margin-bottom:20px">Cadeia de blocos · ao vivo</div>
+      <div class="chain-blocks">
+        <div class="block">
+          <div class="block-hash-icon">⬡</div>
+          <div class="block-info">
+            <div class="block-id">#18.447.231 · 0x7f3a...c912</div>
+            <div class="block-data">Água Limpa BA · 3 doações confirmadas</div>
+          </div>
+          <div class="block-amount">R$ 230</div>
+        </div>
+        <div class="chain-connector"></div>
+        <div class="block">
+          <div class="block-hash-icon">⬡</div>
+          <div class="block-info">
+            <div class="block-id">#18.447.198 · 0xb2e1...44fd</div>
+            <div class="block-data">Água Limpa BA · Repasse ONG confirmado</div>
+          </div>
+          <div class="block-amount">R$ 4.200</div>
+        </div>
+        <div class="chain-connector"></div>
+        <div class="block">
+          <div class="block-hash-icon">⬡</div>
+          <div class="block-info">
+            <div class="block-id">#18.447.102 · 0x09cd...7a3b</div>
+            <div class="block-data">Água Limpa BA · Compra materiais cisterna</div>
+          </div>
+          <div class="block-amount">R$ 2.800</div>
+        </div>
+        <div class="chain-connector"></div>
+        <div class="block">
+          <div class="block-hash-icon">⬡</div>
+          <div class="block-info">
+            <div class="block-id">#18.446.998 · 0xf91c...8d2e</div>
+            <div class="block-data">Água Limpa BA · 12 doações processadas</div>
+          </div>
+          <div class="block-amount">R$ 880</div>
+        </div>
+      </div>
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between">
+        <span style="font-size:12px;color:rgba(255,255,255,0.35)">Rede Ethereum (Sepolia Testnet)</span>
+        <a href="#" style="font-size:12px;color:#7ec8f8;text-decoration:none">Ver no Etherscan →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT METRICS -->
+<section class="section impact" id="impacto">
+  <div class="section-inner">
+    <div class="section-header fade-in" style="text-align:center">
+      <div class="section-label">Impacto real</div>
+      <h2 class="section-title">Números que transformam</h2>
+      <p class="section-subtitle" style="margin:0 auto">Dados em tempo real da causa piloto — todos verificáveis na blockchain.</p>
+    </div>
+    <div class="impact-metrics">
+      <div class="metric-card fade-in">
+        <div class="metric-icon" style="background:var(--sky)">💧</div>
+        <div class="metric-num">127</div>
+        <div class="metric-label">famílias com acesso à água</div>
+      </div>
+      <div class="metric-card fade-in fade-in-delay-1">
+        <div class="metric-icon" style="background:var(--teal-light)">🏗️</div>
+        <div class="metric-num">43</div>
+        <div class="metric-label">cisternas construídas</div>
+      </div>
+      <div class="metric-card fade-in fade-in-delay-2">
+        <div class="metric-icon" style="background:var(--amber-light)">📋</div>
+        <div class="metric-num">18</div>
+        <div class="metric-label">relatórios publicados on-chain</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE SECTION -->
+<section class="donate-section" id="doe">
+  <div class="donate-inner">
+    <div class="cause-detail">
+      <div class="cause-detail-header">
+        <span class="cause-detail-tag">Causa piloto · Ativa</span>
+        <h2 class="cause-detail-title">Água Limpa para<br>o Semiárido Baiano</h2>
+        <p class="cause-detail-desc">
+          No semiárido da Bahia, mais de 30% das famílias rurais ainda não têm acesso regular à água potável. Este projeto constrói cisternas e poços artesianos para 200 famílias em 12 municípios. Cada doação é registrada na blockchain e vinculada a um resultado concreto e verificável.
+        </p>
+      </div>
+
+      <div class="cause-detail-progress">
+        <div class="progress-stats">
+          <div>
+            <div class="progress-stat-num">R$ 86.400</div>
+            <div class="progress-stat-label">arrecadados</div>
+          </div>
+          <div>
+            <div class="progress-stat-num">R$ 127.000</div>
+            <div class="progress-stat-label">meta total</div>
+          </div>
+          <div>
+            <div class="progress-stat-num">2.318</div>
+            <div class="progress-stat-label">doadores</div>
+          </div>
+        </div>
+        <div class="progress-bar-lg">
+          <div class="progress-fill-lg"></div>
+        </div>
+      </div>
+
+      <h3 style="font-size:17px;font-weight:500;color:var(--navy);margin-bottom:20px">Atualizações recentes</h3>
+      <div class="updates-list">
+        <div class="update-item">
+          <div class="update-date-col">
+            <div class="update-day">28</div>
+            <div class="update-month">MAR</div>
+          </div>
+          <div>
+            <div class="update-title">15ª cisterna entregue em Uauá</div>
+            <div class="update-text">A família Silva recebeu sua cisterna de 16.000 litros. Fotos e vídeo publicados no IPFS vinculado à transação.</div>
+            <div class="update-tx">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <a href="#" class="update-tx-link">0xb4f2...9a1c → ver no Etherscan</a>
+            </div>
+          </div>
+        </div>
+        <div class="update-item">
+          <div class="update-date-col">
+            <div class="update-day">21</div>
+            <div class="update-month">MAR</div>
+          </div>
+          <div>
+            <div class="update-title">Compra de materiais: lote 3</div>
+            <div class="update-text">R$ 14.200 em tubos e cimentos adquiridos. Nota fiscal e hash da transação publicados no painel de prestação de contas.</div>
+            <div class="update-tx">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <a href="#" class="update-tx-link">0x09cd...7a3b → ver no Etherscan</a>
+            </div>
+          </div>
+        </div>
+        <div class="update-item">
+          <div class="update-date-col">
+            <div class="update-day">10</div>
+            <div class="update-month">MAR</div>
+          </div>
+          <div>
+            <div class="update-title">Repasse para ONG parceira confirmado</div>
+            <div class="update-text">Smart contract liberou automaticamente R$ 28.000 para a ONG executora após atingir o milestone de 40 cisternas.</div>
+            <div class="update-tx">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <a href="#" class="update-tx-link">0xf91c...8d2e → ver no Etherscan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="donate-form-card">
+        <div class="form-title">Fazer uma doação</div>
+        <div class="form-subtitle">100% rastreável · Hash on-chain imediato</div>
+
+        <div class="form-group">
+          <label class="form-label">Escolha o valor (R$)</label>
+          <div class="amount-grid">
+            <button class="amount-btn" onclick="selectAmount(this,'20')">R$ 20</button>
+            <button class="amount-btn selected" onclick="selectAmount(this,'50')">R$ 50</button>
+            <button class="amount-btn" onclick="selectAmount(this,'100')">R$ 100</button>
+            <button class="amount-btn" onclick="selectAmount(this,'200')">R$ 200</button>
+            <button class="amount-btn" onclick="selectAmount(this,'500')">R$ 500</button>
+            <button class="amount-btn" onclick="selectAmount(this,'outro')">Outro</button>
+          </div>
+          <input type="number" class="form-input" id="custom-amount" placeholder="Valor personalizado" style="display:none" oninput="updateImpact(this.value)">
+        </div>
+
+        <div class="impact-preview" id="impact-preview">
+          <div class="impact-preview-icon">💧</div>
+          <div class="impact-preview-text">
+            Com <strong id="preview-amount">R$ 50</strong>, você garante <strong id="preview-impact">água para 1 família por 3 meses</strong>.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Seu nome (opcional)</label>
+          <input type="text" class="form-input" placeholder="Ex: Maria S.">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">E-mail para receber atualizações</label>
+          <input type="email" class="form-input" id="donor-email" placeholder="seu@email.com">
+        </div>
+
+        <button class="donate-submit" onclick="processDonation()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+          Confirmar doação
+        </button>
+        <div class="form-security">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          Pagamento seguro · Registro blockchain imediato
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust-section">
+  <div class="section-inner">
+    <div class="section-header fade-in" style="text-align:center">
+      <div class="section-label">Por que confiar</div>
+      <h2 class="section-title">Construído para a<br>próxima era do bem</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card fade-in">
+        <div class="trust-card-icon" style="background:var(--sky)">🔗</div>
+        <h3>Smart contracts auditados</h3>
+        <p>Os contratos inteligentes são públicos, auditados por terceiros e não podem ser alterados por ninguém — nem por nós.</p>
+      </div>
+      <div class="trust-card fade-in fade-in-delay-1">
+        <div class="trust-card-icon" style="background:var(--teal-light)">📊</div>
+        <h3>Prestação de contas em tempo real</h3>
+        <p>Cada gasto da ONG executora precisa ser submetido on-chain antes de os fundos serem liberados. Zero confiança cega.</p>
+      </div>
+      <div class="trust-card fade-in fade-in-delay-2">
+        <div class="trust-card-icon" style="background:var(--amber-light)">🏛️</div>
+        <h3>ONGs verificadas</h3>
+        <p>Todas as organizações executoras passam por due diligence jurídica e financeira antes de serem cadastradas na plataforma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span class="logo-text">Impact<span>Chain</span></span>
+      </a>
+      <p>A plataforma de doações mais transparente do Brasil. Cada centavo rastreado, cada impacto verificado.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Plataforma</h4>
+      <a href="#">Causas ativas</a>
+      <a href="#">Como funciona</a>
+      <a href="#">Para ONGs</a>
+      <a href="#">Auditorias</a>
+    </div>
+    <div class="footer-col">
+      <h4>Transparência</h4>
+      <a href="#">Contratos no GitHub</a>
+      <a href="#">Etherscan</a>
+      <a href="#">Relatórios</a>
+      <a href="#">Whitepaper</a>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <a href="#">Sobre nós</a>
+      <a href="#">Blog</a>
+      <a href="#">Contato</a>
+      <a href="#">Privacidade</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 ImpactChain · MVP v0.1</span>
+    <div class="chain-badge">
+      <div class="chain-badge-dot"></div>
+      Ethereum Sepolia Testnet · Contrato: 0x4a2f...d831
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-icon">💧</div>
+    <h2>Doação registrada!</h2>
+    <p>Sua doação foi processada e registrada na blockchain. Você receberá um e-mail com atualizações do impacto gerado.</p>
+    <div class="tx-receipt">
+      <div class="tx-receipt-row">
+        <span>Valor</span>
+        <span id="receipt-amount">R$ 50,00</span>
+      </div>
+      <div class="tx-receipt-row">
+        <span>Causa</span>
+        <span>Água Limpa BA</span>
+      </div>
+      <div class="tx-receipt-row">
+        <span>Hash da transação</span>
+        <span id="receipt-hash">0x7f3a...c912</span>
+      </div>
+      <div class="tx-receipt-row">
+        <span>Bloco</span>
+        <span id="receipt-block">#18.447.231</span>
+      </div>
+      <div class="tx-receipt-row">
+        <span>Status</span>
+        <span style="color:#0CA882">✓ Confirmado</span>
+      </div>
+    </div>
+    <a href="#" class="btn-primary" style="width:100%;justify-content:center" onclick="closeModal()">
+      Ver no Etherscan →
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
