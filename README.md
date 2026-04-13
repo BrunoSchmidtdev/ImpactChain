@@ -7,7 +7,7 @@
 
 **TrustChain** é uma plataforma de doações com **prova de impacto em blockchain**. Não basta registrar que o dinheiro foi doado — aqui, a comunidade valida se o impacto foi real. Cada doação é rastreada na rede Solana, cada ação da ONG vira um registro imutável, e cada beneficiário pode confirmar a entrega.
 
-> *"Não doamos dinheiro. Validamos impacto."*
+> **Slogan**
 
 ---
 
