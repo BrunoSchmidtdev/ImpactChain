@@ -1,71 +1,248 @@
-# 💎 ImpactChain — Transparência Real e Verificável
+# 🔗 TrustChain — Secure Donation Platform
 
-![Blockchain](https://img.shields.io/badge/Blockchain-Ethereum_Sepolia-blue)
+![Blockchain](https://img.shields.io/badge/Blockchain-Solana-9945FF)
 ![Status](https://img.shields.io/badge/Status-MVP_v0.1-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+![Network](https://img.shields.io/badge/Network-Solana_Devnet-14F195)
 
-**ImpactChain** é uma plataforma de doações filantrópicas que utiliza a tecnologia blockchain para garantir que cada centavo doado seja rastreado, do momento do PIX até a execução da obra no mundo real. Sem intermediários ocultos, sem caixas-pretas.
+**TrustChain** é uma plataforma de doações com **prova de impacto em blockchain**. Não basta registrar que o dinheiro foi doado — aqui, a comunidade valida se o impacto foi real. Cada doação é rastreada na rede Solana, cada ação da ONG vira um registro imutável, e cada beneficiário pode confirmar a entrega.
 
----
-
-## 🚀 A Proposta
-O setor de doações no Brasil ainda enfrenta desafios de confiança. O ImpactChain resolve isso através de **Smart Contracts**, onde a prestação de contas não é apenas um relatório em PDF, mas um registro imutável na rede Ethereum.
-
-### Diferenciais:
-- **Imutabilidade:** Registros que não podem ser alterados ou deletados.
-- **Transparência On-chain:** Qualquer pessoa pode verificar as transações via Etherscan.
-- **Milestones Automáticos:** Liberação de fundos condicionada à conclusão de etapas verificadas.
-- **Open Source:** Contratos inteligentes públicos para auditoria comunitária.
+> *"Não doamos dinheiro. Validamos impacto."*
 
 ---
 
-## 🛠️ Como Funciona
+## 🎯 O Problema
 
-1. **Escolha da Causa:** O doador seleciona causas verificadas (Ex: Água Limpa para o Semiárido).
-2. **Doação Híbrida:** Pagamento via PIX ou Cartão, convertido e registrado automaticamente na rede.
-3. **Registro On-chain:** Cada doação gera um hash público e imutável.
-4. **Rastreabilidade de Impacto:** O usuário recebe atualizações (fotos, notas fiscais via IPFS) vinculadas diretamente ao hash da sua doação.
+O setor de doações enfrenta uma crise de confiança estrutural:
 
----
+- Doadores não sabem **para onde o dinheiro realmente vai**
+- ONGs lutam para **provar credibilidade** sem ferramentas adequadas
+- Relatórios em PDF são facilmente falsificáveis
+- **Falta a camada final:** mesmo com blockchain, quem garante que o impacto registrado é verdadeiro?
 
-## 💧 Estudo de Caso (MVP): Água Limpa para o Semiárido
-Atualmente operando com uma causa piloto focada na Bahia:
-- **Meta:** R$ 127.000,00
-- **Objetivo:** Cisternas e poços artesianos para 200 famílias.
-- **Status:** +120 famílias atendidas e 43 cisternas construídas (Dados simulados/MVP).
+**A TrustChain resolve isso com validação descentralizada pela comunidade.**
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## 💡 A Solução
 
-- **Smart Contracts:** Solidity
-- **Rede:** Ethereum (Sepolia Testnet)
-- **Frontend:** [Sua Framework: ex: React/Next.js]
-- **Integração Web3:** Etherscan API / Wagmi / Viem
-- **Armazenamento:** IPFS (para relatórios e evidências)
+Plataforma de doações onde a prova de impacto é gerada em duas camadas:
 
----
-
-## 📊 Estrutura de Transparência
-
-| Recurso | Descrição |
+| Camada | O que é |
 | :--- | :--- |
-| **Imutável** | Registros permanentes na blockchain |
-| **Público** | Verificável por qualquer pessoa no mundo |
-| **Descentralizado** | Sem servidor central que possa ser manipulado |
-| **Auditável** | Smart Contracts públicos no GitHub |
+| **Técnica** | Transação registrada e imutável na blockchain Solana |
+| **Social** | Comunidade valida se o impacto realmente aconteceu |
+
+Juntas, formam **prova social + prova técnica** — o diferencial que nenhuma plataforma atual oferece.
 
 ---
 
-## 🛡️ Segurança e Confiança
-- **Contrato Inteligente:** `0x4a2f...d831` (Sepolia Testnet)
-- **Auditoria:** Lógica de contratos públicos para inspeção.
-- **Due Diligence:** ONGs parceiras passam por verificação jurídica antes do cadastro.
+## 🚀 Como Funciona
+
+### 🏷️ 1. Campanha com TAG
+A ONG cria uma campanha categorizada por tipo de causa:
+```
+"Enchentes no RS"  |  "Ajuda alimentar SP"  |  "Água limpa BA"
+```
+
+### 💸 2. Doação registrada on-chain
+O doador contribui normalmente. Cada doação gera um **hash público e imutável** na rede Solana via programa Anchor.
+
+### 📦 3. ONG registra o impacto
+A ONG submete provas da execução:
+- Descrição da ação ("Distribuímos 100 marmitas")
+- Fotos e documentos armazenados via IPFS
+- Hash da transação vinculado à prova
+
+### 👥 4. Comunidade valida *(O Diferencial 🔥)*
+Pessoas que receberam ou presenciaram a ação podem:
+- 👍 Confirmar a entrega
+- 💬 Comentar
+- ⭐ Avaliar (1–5 estrelas)
+
+### 📊 5. Score de Impacto gerado automaticamente
+```
+87% das pessoas confirmaram
+12 avaliações positivas · 1 negativa
+Score: 9.1 / 10
+```
+Esse score vira reputação pública e permanente da ONG na blockchain.
+
+---
+
+## ⚡ Por que Solana?
+
+| Critério | Motivo |
+| :--- | :--- |
+| **Alta velocidade** | Transações confirmadas em ~400ms |
+| **Taxas baixíssimas** | ~$0,00025 por transação — viável para microdoações |
+| **Escalabilidade** | Suporta alto volume sem congestionamento |
+| **Transparência nativa** | Tudo auditável via Solana Explorer |
+| **Ecossistema ativo** | Anchor Framework para contratos robustos |
+
+> Sem Solana, o modelo de microdoações com validação comunitária não seria economicamente viável em escala.
+
+---
+
+## 🛠️ Arquitetura do Sistema
+
+```
+      Usuário
+         |
+         v
+  Frontend (React)
+         |
+         v
+  Backend (FastAPI)
+    /         |         \
+   v          v          v
+PostgreSQL  Solana     Storage (IPFS)
+            (Anchor)   imagens/provas
+    |          |
+    +---> Hash de transações <---+
+```
+
+**Stack completa:**
+
+- **Smart Contracts:** Rust + Anchor Framework
+- **Rede:** Solana (Devnet → Mainnet)
+- **Frontend:** React / Next.js
+- **Backend:** FastAPI (Python)
+- **Banco de dados:** PostgreSQL
+- **Armazenamento:** IPFS (provas de impacto, fotos, relatórios)
+- **Integração Web3:** `@solana/web3.js` + Anchor IDL
+
+---
+
+## 💰 Modelo de Negócio
+
+| Canal | Descrição |
+| :--- | :--- |
+| **Taxa por transação** | % pequena sobre cada doação processada |
+| **Planos premium para ONGs** | Analytics avançado, destaque, relatórios automáticos |
+| **NFTs de impacto** | Doadores recebem NFT como comprovante gamificado |
+| **Parcerias ESG** | Empresas que buscam transparência nas ações de impacto social |
+
+---
+
+## 🔥 Diferenciais
+
+- ✅ **Não é só doação** → é prova verificável de impacto real
+- ✅ **Validação dupla** → técnica (blockchain) + social (comunidade)
+- ✅ **Score de reputação** de ONGs gerado on-chain
+- ✅ **Transparência em tempo real** — hash público imediato
+- ✅ **Registro imutável** na rede Solana
+- ✅ **Gamificação** com NFTs de impacto para doadores
+
+---
+
+## 🗺️ Roadmap
+
+### MVP (Hackathon)
+- [x] Interface da plataforma (landing + fluxo de doação)
+- [x] Arquitetura blockchain definida (Solana + Anchor)
+- [ ] Criar 1 campanha piloto na Devnet
+- [ ] Implementar doação com registro on-chain
+- [ ] Registrar uso do dinheiro pela ONG
+- [ ] Dashboard de impacto com score da comunidade
+
+### Próximos Passos
+- [ ] Integração com carteira real (Phantom / Solflare)
+- [ ] Sistema de reputação de ONGs on-chain
+- [ ] Upload de provas via IPFS com hash vinculado
+- [ ] Validação comunitária com score automático
+- [ ] Expansão para múltiplas campanhas simultâneas
+- [ ] NFTs de impacto para doadores (gamificação)
 
 ---
 
 ## 🏗️ Como Rodar o Projeto
 
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/seu-usuario/impactchain.git](https://github.com/seu-usuario/impactchain.git)
+### Pré-requisitos
+- Node.js 18+
+- Rust + Solana CLI
+- Anchor CLI
+- Python 3.10+ (backend)
+
+### 1. Clone o repositório
+```bash
+git clone https://github.com/seu-usuario/trustchain.git
+cd trustchain
+```
+
+### 2. Instale as dependências do frontend
+```bash
+cd frontend
+npm install
+```
+
+### 3. Configure o programa Anchor (Solana)
+```bash
+cd program
+anchor build
+anchor deploy --provider.cluster devnet
+```
+
+### 4. Inicie o backend
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+### 5. Configure as variáveis de ambiente
+```bash
+cp .env.example .env
+# Edite: SOLANA_RPC_URL, PROGRAM_ID, DATABASE_URL
+```
+
+### 6. Inicie o frontend
+```bash
+cd frontend
+npm run dev
+```
+
+Acesse: `http://localhost:3000`
+
+---
+
+## 🛡️ Segurança e Confiança
+
+- **Program ID:** `TrustXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX` *(Devnet)*
+- **Contratos auditáveis:** Código Rust/Anchor público no repositório
+- **Verificação de ONGs:** Due diligence jurídica antes do cadastro
+- **IPFS:** Provas de impacto armazenadas de forma descentralizada
+
+---
+
+## 📊 Mercado
+
+- **Mercado global de doações:** bilhões de dólares por ano
+- **Crescimento de:** fintechs sociais, Web3, economia de impacto
+- **Público-alvo:** doadores digitais (Web2 → Web3), ONGs, empresas com ESG
+
+> **Insight central:** Confiança é o maior gargalo do setor de doações — e também a maior oportunidade.
+
+---
+
+## 👥 Time
+
+| Nome | Papel |
+| :--- | :--- |
+| **Carlos** | Dev Back-end + Business |
+| **Adam** | Design do Pitch |
+| **Patrícia** | Dev Front-end |
+| **Bruno** | Dev BlockChain |
+
+---
+
+## 📄 Licença
+
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+
+---
+
+<div align="center">
+  <strong>TrustChain — Secure Donation Platform</strong><br>
+  Construído com 💙 para provar que transparência e propósito engajam.
+</div>
